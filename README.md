@@ -53,8 +53,8 @@ Bash
 python3 dir_finder.py -u [http://127.0.0.1:3000](http://127.0.0.1:3000) -w custom_paths.txt -t 30
 
 Terminal Preview Output
-Plaintext
-
+```Plaintext
+                                                             
                            ▒▓▒▒▒▒▒▒▒▒▒▒▒▓▓                           
                     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▓▒▒▒▒▒▒▒▒▒▒▓▒                 
                 ▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███▓▓▓▓▓▓▓▓▓▓▓▓▓▒            
@@ -71,25 +71,30 @@ Plaintext
           ▓▓▓▓▓▓▓██████▓▓▒░░░▒░░▒░▒▒▒▒▒▒▒▒▒▒▓███████▓▓▓▓▓▓▓          
               ▓▓▓▓▓▓█████████▓▓▓▓▓▓▓▓▓▓██████████▓▓▓▒▓▓              
                    ▓▒▒▓▓▓████████████████████▓▓▓▓                    
-                          ▓▓▓▓████████████                           
-                                              
+                          ▓▓▓▓████████████                                                                                     
+
 
 ========[Dir Finder]========
 
 [*] Version: 1.0
+
 [*] Created By: Kirito340866
 
 ============================
 
-[/] Start Finding ...
-[*] Target: http://localhost:3000
+[*] Target:     http://localhost:3000
+[*] Wordlist:   /usr/share/seclists/Discovery/Web-Content/raft-medium-words.txt
+[*] Thread:     2
 
-[/] Fake Response is Detected:           Size: 4042 Bytes
+[/] Start Finding...
 
-[+] http://localhost:3000/admin           Status Code: 200
-[+] http://localhost:3000/dashboard       Status Code: 200
-[+] http://localhost:3000/assets          Status Code: 301
 
+[/] Fake Response is Detected:           Size: 9903 Bytes
+
+[+] http://localhost:3000/profile                       Status Code: 500
+[+] http://localhost:3000/api                   Status Code: 500
+
+```
 Educational Disclaimer
 
 This suite is developed and distributed strictly for educational purposes, authorized penetration testing, and home lab vulnerability research. Do not execute these tools against any production network or environment without explicit, written, and legal authorization from the owner. The developer accepts no liability for misuse, legal ramifications, or collateral damage.
