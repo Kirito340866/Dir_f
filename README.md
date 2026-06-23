@@ -113,6 +113,6 @@ Terminal Preview Output
 [+] http://localhost:3000/api                   Status Code: 500
 
 ```
-Educational Disclaimer
+⚠️ Educational Disclaimer
 
 This suite is developed and distributed strictly for educational purposes, authorized penetration testing, and home lab vulnerability research. Do not execute these tools against any production network or environment without explicit, written, and legal authorization from the owner. The developer accepts no liability for misuse, legal ramifications, or collateral damage.
