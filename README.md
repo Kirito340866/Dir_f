@@ -26,6 +26,21 @@ Make sure you are on your Kali Linux machine (or any system running Python 3) an
 ```bash
 pip install requests
 ```
+## How to Install
+
+Follow these steps to install and set up the tool on your Linux system (Kali Linux recommended):
+
+```bash
+# 1. Clone the repository from GitHub
+git clone [https://github.com/Kirito340866/MK1.git](https://github.com/Kirito340866/MK1.git)
+
+# 2. Navigate into the project directory
+cd MK1
+
+# 3. Install the required Python dependencies
+pip install requests
+```
+    Note for Kali Linux users: If you get an error regarding "externally-managed-environment" while running pip, you can install the requests library using apt: sudo apt install python3-requests
 How To Use (Directory Finder)
 
 Run the script by passing your target flags. If you do not supply optional flags, the tool automatically pulls from your system's default SecLists path.
@@ -50,7 +65,7 @@ python3 dir_finder.py -u [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 Bash
 
-python3 dir_finder.py -u [http://127.0.0.1:3000](http://127.0.0.1:3000) -w custom_paths.txt -t 30
+python3 dir_finder.py -u [http://127.0.0.1:3000](http://127.0.0.1:3000) -w custom_paths.txt -t 2
 
 Terminal Preview Output
 ```Plaintext
@@ -83,7 +98,7 @@ Terminal Preview Output
 ============================
 
 [*] Target:     http://localhost:3000
-[*] Wordlist:   /usr/share/seclists/Discovery/Web-Content/raft-medium-words.txt
+[*] Wordlist:   custom_paths.txt
 [*] Thread:     2
 
 [/] Start Finding...
