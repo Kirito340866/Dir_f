@@ -40,7 +40,10 @@ cd MK1
 # 3. Install the required Python dependencies
 pip install requests
 ```
-    Note for Kali Linux users: If you get an error regarding "externally-managed-environment" while running pip, you can install the requests library using apt: sudo apt install python3-requests
+Note for Kali Linux users: If you get an error regarding "externally-managed-environment" while running pip, you can install the requests library using apt:
+```bash
+sudo apt install python3-requests
+```
 How To Use (Directory Finder)
 
 Run the script by passing your target flags. If you do not supply optional flags, the tool automatically pulls from your system's default SecLists path.
